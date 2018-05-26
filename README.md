@@ -14,7 +14,7 @@ A small language for simulating the behavior of Turing Machines
 | if a WRITE b| If the block under the head reads the char 'a', replace it with the char 'b'|
 | ifnot x {LEFT \| RIGHT\| HALT} | If the block under the head does not read the char 'x', move left/right or halt|
 | ifnot a WRITE b| If the block under the head does not read the char 'a', replace it with the char 'b'|
-| goto n | Jump to line n and continue executing from there|
+| goto n | Jump to line n (zero-indexed) and continue executing from there|
 | write x | Replace the char on the block under the head with 'x'|
 | print | Print the contents of the tape |
 | copytoend | Append the char on the block under the head to the end of the tape |
